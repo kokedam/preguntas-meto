@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Evaluación de Tareas Motrices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cuestionario de Evaluación de Tareas Motrices</h1>
+    
+    <div class="question" id="q1">
+        <h3>1. De las siguientes pautas de actuación con los sujetos con relación al desarrollo motor y aprendizaje de las habilidades motrices, ¿cuál no es correcta?:</h3>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> a) Escoger actividades adecuadas a la edad.</label>
+            <label><input type="radio" name="q1" value="b"> b) Intentar mantener una correcta postura corporal.</label>
+            <label><input type="radio" name="q1" value="c"> c) En el diseño de las actividades y juegos debemos tener presente que la salud es algo prioritario.</label>
+            <label><input type="radio" name="q1" value="d"> d) Realizar actividades muy intensas.</label>
+        </div>
+        <button onclick="checkAnswer('q1', 'd')">Verificar respuesta</button>
+        <p class="result" id="result-q1"></p>
+    </div>
+
+    <div class="question" id="q2">
+        <h3>2. Las fases de adquisición de las habilidades motrices según Ruiz Pérez son:</h3>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> a) Fase de preparación, fase acción y fase reflexiva.</label>
+            <label><input type="radio" name="q2" value="b"> b) Fase inicial, fase de ejecución y fase de evaluación.</label>
+            <label><input type="radio" name="q2" value="c"> c) Fase inicial, fase de ejecución y fase de resultado.</label>
+            <label><input type="radio" name="q2" value="d"> d) Fase inicial, fase intermedia y fase final.</label>
+        </div>
+        <button onclick="checkAnswer('q2', 'c')">Verificar respuesta</button>
+        <p class="result" id="result-q2"></p>
+    </div>
+
+    <div class="question" id="q3">
+        <h3>3. De los siguientes modelos propuestos por Riera para la enseñanza en el aprendizaje motor, ¿cuál no es correcto?:</h3>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a"> a) Modelos físicos.</label>
+            <label><input type="radio" name="q3" value="b"> b) Modelos biológicos.</label>
+            <label><input type="radio" name="q3" value="c"> c) Modelos matemáticos.</label>
+            <label><input type="radio" name="q3" value="d"> d) Modelos psicológicos.</label>
+        </div>
+        <button onclick="checkAnswer('q3', 'a')">Verificar respuesta</button>
+        <p class="result" id="result-q3"></p>
+    </div>
+
+    <div class="question" id="q4">
+        <h3>4. En el trabajo del mecanismo de decisión, podemos introducir una serie de factores que nos aportan riqueza en la recepción del estímulo y, por tanto, generar una mejor variedad en la respuesta. De los siguientes, ¿cuáles son correctos?:</h3>
+        <div class="options">
+            <label><input type="radio" name="q4" value="a"> a) Número de decisiones a tomar.</label>
+            <label><input type="radio" name="q4" value="b"> b) Nivel de incertidumbre.</label>
+            <label><input type="radio" name="q4" value="c"> c) Nivel de riesgo de la decisión.</label>
+            <label><input type="radio" name="q4" value="d"> d) Todas las respuestas anteriores son correctas.</label>
+        </div>
+        <button onclick="checkAnswer('q4', 'd')">Verificar respuesta</button>
+        <p class="result" id="result-q4"></p>
+    </div>
+
+    <div class="question" id="q5">
+        <h3>5. En el trabajo del mecanismo de ejecución, si queremos aumentar la dificultad en la respuesta, podemos aumentar el nivel de fuerza requerido para ejecutar la tarea. ¿Esto es correcto?:</h3>
+        <div class="options">
+            <label><input type="radio" name="q5" value="a"> a) Solo en el trabajo con los más pequeños.</label>
+            <label><input type="radio" name="q5" value="b"> b) No es correcto.</label>
+            <label><input type="radio" name="q5" value="c"> c) Solo en deportes de lucha.</label>
+            <label><input type="radio" name="q5" value="d"> d) Siempre es más difícil.</label>
+        </div>
+        <button onclick="checkAnswer('q5', 'b')">Verificar respuesta</button>
+        <p class="result" id="result-q5"></p>
+    </div>
+
+    <div class="question" id="q6">
+        <h3>6. En una tarea motriz, aumentar el número de estímulos en el mecanismo de percepción conlleva:</h3>
+        <div class="options">
+            <label><input type="radio" name="q6" value="a"> a) Mayor dificultad en la percepción del estímulo.</label>
+            <label><input type="radio" name="q6" value="b"> b) Menor dificultad en la percepción del estímulo.</label>
+            <label><input type="radio" name="q6" value="c"> c) Da igual el número de estímulos recibidos en este mecanismo.</label>
+            <label><input type="radio" name="q6" value="d"> d) Todas las respuestas anteriores son correctas.</label>
+        </div>
+        <button onclick="checkAnswer('q6', 'a')">Verificar respuesta</button>
+        <p class="result" id="result-q6"></p>
+    </div>
+
+    <div class="question" id="q7">
+        <h3>7. ¿En qué etapa empieza aproximadamente el control de esfínteres?:</h3>
+        <div class="options">
+            <label><input type="radio" name="q7" value="a"> a) 2-3 años.</label>
+            <label><input type="radio" name="q7" value="b"> b) 7-9 meses.</label>
+            <label><input type="radio" name="q7" value="c"> c
